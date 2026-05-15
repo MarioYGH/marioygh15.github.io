@@ -14,7 +14,7 @@
 
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar" id="navbar">
-    <h2 class="logo">MarioG.dev</h2>
+    <h2 class="logo">MarioYGH.dev</h2>
     <div class="nav-links">
       <a href="#sobre-mi">Sobre mí</a>
       <a href="#experiencia">Experiencia</a>
@@ -29,9 +29,9 @@
   <header class="hero">
     <section class="hero-content">
       <p class="tag">IA &bull; Software &bull; Sistemas Embebidos &bull; Innovación</p>
-      <h1>Hola, soy <span>Mario García</span></h1>
+      <h1>Hola, soy <span>Mario Y García Hernández</span></h1>
       <p class="description">
-        Desarrollador de IA Jr. en Querétaro Digital, tecnólogo por la UNAM Juriquilla
+        Desarrollador de IA en Querétaro Digital, tecnólogo por la UNAM Juriquilla
         y ganador del Hackathon Querétaro Digital.
       </p>
       <div class="hero-buttons">
@@ -49,7 +49,7 @@
       <div class="about-grid">
         <p class="about-text">
           Soy egresado de Tecnología por la UNAM, campus Juriquilla. Actualmente trabajo como
-          Desarrollador de IA Jr. en el proyecto Querétaro Digital, impulsado por el Gobierno
+          Desarrollador de IA en el proyecto Querétaro Digital, impulsado por el Gobierno
           del Estado de Querétaro. También colaboro desde hace más de cuatro años en el CFATA-UNAM,
           desarrollando proyectos relacionados con sistemas embebidos, procesamiento de señales,
           automatización e inteligencia artificial aplicada.
@@ -57,7 +57,7 @@
         <ul class="about-highlights">
           <li><span class="hl-icon">🏆</span> Ganador del Hackathon Querétaro Digital 2024</li>
           <li><span class="hl-icon">🎓</span> Egresado de Tecnología — UNAM Juriquilla</li>
-          <li><span class="hl-icon">🤖</span> Desarrollador de IA Jr. en Querétaro Digital</li>
+          <li><span class="hl-icon">🤖</span> Desarrollador de IA en Querétaro Digital</li>
           <li><span class="hl-icon">🔬</span> +4 años de investigación en CFATA-UNAM</li>
           <li><span class="hl-icon">💡</span> Proyectos en IoT, IA aplicada y señales biomédicas</li>
         </ul>
@@ -75,7 +75,7 @@
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <span class="timeline-date">2025 – presente</span>
-            <h3>Desarrollador de IA Jr.</h3>
+            <h3>Desarrollador de IA</h3>
             <p class="timeline-org">Querétaro Digital · Gobierno del Estado de Querétaro</p>
             <p>Desarrollo de chatbots conversacionales con RAG, clasificadores de seguridad con embeddings y pipelines de NLP para trámites gubernamentales en producción.</p>
           </div>
@@ -117,7 +117,7 @@
     <!-- ===== PROYECTOS ===== -->
     <section id="proyectos" class="section reveal">
       <h2>Proyectos destacados</h2>
-      <p class="section-subtitle">Algunos de los proyectos en los que he trabajado. Cada tarjeta puede incluir un enlace a su repositorio.</p>
+      <p class="section-subtitle">Algunos de los proyectos en los que he trabajado.</p>
 
       <div class="cards">
 
@@ -125,17 +125,17 @@
           ════════════════════════════════════════════════════
           CÓMO EDITAR UN PROYECTO:
           - icon:         Emoji representativo del proyecto
-          - badge:        Texto del badge superior (ej. "Destacado", "En producción", "Tesis")
-          - badge-class:  "badge--featured" (morado), "badge--live" (verde), "badge--thesis" (azul)
+          - badge:        Texto del badge superior (ej. "Destacado", "Tesis", "Hackathon")
+          - badge-class:  "badge--featured" (morado), "badge--live" (verde), "badge--thesis" (azul), "badge--award" (dorado)
           - h3:           Nombre del proyecto
-          - p:            Descripción del proyecto (puede ser tan larga como necesites)
-          - tags:         Lista de tecnologías separadas por ·
-          - href del btn: URL del repositorio en GitHub (o "#" si es privado)
-          - btn text:     "Ver en GitHub" o "Repositorio privado"
+          - p:            Descripción del proyecto
+          - card-tags:    Tecnologías usadas
+          - href del btn: URL del repo en GitHub, o "#" si es privado
+          - btn class:    agrega "card-btn--disabled" si es repositorio privado
           ════════════════════════════════════════════════════
         -->
 
-        <!-- PROYECTO 1 -->
+        <!-- PROYECTO 1 — Tesis (privado) -->
         <article class="card" id="proyecto-ecg">
           <div class="card-header">
             <span class="card-icon">🫀</span>
@@ -150,30 +150,48 @@
           <div class="card-tags">
             <span>ESP32-S3</span><span>C</span><span>NB-IoT</span><span>Python</span><span>Django</span><span>ECG</span>
           </div>
-          <!-- Cambia el href por la URL de tu repo, o pon "#" si es privado -->
-          <a href="#" class="card-btn" target="_blank" rel="noopener">Ver en GitHub →</a>
+          <a href="#" class="card-btn card-btn--disabled">Repositorio privado</a>
         </article>
 
-        <!-- PROYECTO 2 -->
-        <article class="card" id="proyecto-chatbot">
+        <!-- PROYECTO 2 — Mediciones Topográficas (público) -->
+        <article class="card" id="proyecto-topografia">
           <div class="card-header">
-            <span class="card-icon">🤖</span>
-            <span class="badge badge--live">En producción</span>
+            <span class="card-icon">📡</span>
+            <span class="badge badge--featured">Destacado</span>
           </div>
-          <h3>Chatbot AppQro con RAG</h3>
+          <h3>Sistema de monitoreo de desplazamiento estructural</h3>
           <p>
-            Asistente conversacional para trámites gubernamentales del estado de Querétaro.
-            Usa FAISS para búsqueda semántica, clasificación de intención y generación
-            de respuesta contextual con LLMs. Actualmente en uso en la plataforma AppQro.
+            Dispositivo IoT para monitorear el desplazamiento de estructuras (muros) mediante
+            potenciómetros lineales. Los datos se almacenan en una tarjeta SD y se transmiten
+            de forma inalámbrica vía LoRa hasta 2 km. Incluye PCB diseñada a medida,
+            caja impresa en 3D (ABS) y sincronización temporal con RTC.
           </p>
           <div class="card-tags">
-            <span>Python</span><span>FAISS</span><span>RAG</span><span>LLM</span><span>NLP</span>
+            <span>ESP32</span><span>C</span><span>LoRa</span><span>PCB</span><span>3D Print</span><span>MATLAB</span>
           </div>
-          <!-- Cambia el href por la URL de tu repo, o pon "#" si es privado -->
-          <a href="#" class="card-btn card-btn--disabled" target="_blank" rel="noopener">Repositorio privado</a>
+          <a href="https://github.com/MarioYGH/MedicionesTopograficas" class="card-btn" target="_blank" rel="noopener">Ver en GitHub →</a>
         </article>
 
-        <!-- PROYECTO 3 -->
+        <!-- PROYECTO 3 — Hackathon (público) -->
+        <article class="card" id="proyecto-hackathon">
+          <div class="card-header">
+            <span class="card-icon">🏆</span>
+            <span class="badge badge--award">1er lugar</span>
+          </div>
+          <h3>Análisis geoespacial para regeneración de mantos freáticos</h3>
+          <p>
+            Herramienta ganadora del 3er Hackathon Querétaro Digital. Procesa modelos digitales
+            de elevación (GeoTIFF) para calcular pendientes, estimar flujo de agua e identificar
+            automáticamente zonas óptimas para construir estructuras de captación
+            (estanques, zanjas, terrazas). Incluye interfaz gráfica y exportación en CSV.
+          </p>
+          <div class="card-tags">
+            <span>Python</span><span>GeoTIFF</span><span>Plotly</span><span>CustomTkinter</span><span>NumPy</span>
+          </div>
+          <a href="https://github.com/MarioYGH/Hackathon" class="card-btn" target="_blank" rel="noopener">Ver en GitHub →</a>
+        </article>
+
+        <!-- PROYECTO 4 — CRM (privado) -->
         <article class="card" id="proyecto-crm">
           <div class="card-header">
             <span class="card-icon">📊</span>
@@ -188,27 +206,7 @@
           <div class="card-tags">
             <span>Python</span><span>CustomTkinter</span><span>Google API</span><span>SQLite</span>
           </div>
-          <!-- Cambia el href por la URL de tu repo -->
-          <a href="#" class="card-btn" target="_blank" rel="noopener">Ver en GitHub →</a>
-        </article>
-
-        <!-- PROYECTO 4 -->
-        <article class="card" id="proyecto-seguridad">
-          <div class="card-header">
-            <span class="card-icon">🛡️</span>
-            <span class="badge badge--live">En producción</span>
-          </div>
-          <h3>Clasificador de ciberseguridad</h3>
-          <p>
-            Clasificador binario basado en embeddings para detectar y filtrar queries
-            potencialmente maliciosas o fuera de dominio antes de enviarlas a un LLM.
-            Componente clave del sistema RAG de Querétaro Digital.
-          </p>
-          <div class="card-tags">
-            <span>Embeddings</span><span>IA</span><span>NLP</span><span>Python</span><span>Gradio</span>
-          </div>
-          <!-- Cambia el href por la URL de tu repo, o pon "#" si es privado -->
-          <a href="#" class="card-btn card-btn--disabled" target="_blank" rel="noopener">Repositorio privado</a>
+          <a href="#" class="card-btn card-btn--disabled">Repositorio privado</a>
         </article>
 
         <!--
@@ -309,7 +307,7 @@
   </main>
 
   <footer>
-    <p>© 2026 Mario García · Hecho con HTML, CSS y GitHub Pages</p>
+    <p>© 2026 Mario Y García Hernández · Hecho con HTML, CSS y GitHub Pages</p>
   </footer>
 
   <script src="script.js"></script>
