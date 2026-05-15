@@ -4,127 +4,312 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mario García | Portafolio</title>
+  <meta name="description" content="Portafolio de Mario García — Desarrollador de IA, sistemas embebidos y software. Egresado UNAM, ganador Hackathon Querétaro Digital." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header class="hero">
-    <nav class="navbar">
-      <h2 class="logo">MarioG.dev</h2>
-      <div class="nav-links">
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#tecnologias">Tecnologías</a>
-        <a href="#contacto">Contacto</a>
-      </div>
-    </nav>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <h2 class="logo">MarioG.dev</h2>
+    <div class="nav-links">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#tecnologias">Tecnologías</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <a href="assets/cv/CV_Mario_Garcia.pdf" download class="btn-nav">Descargar CV</a>
+  </nav>
 
+  <!-- ===== HERO ===== -->
+  <header class="hero">
     <section class="hero-content">
-      <p class="tag">IA • Software • Sistemas Embebidos • Innovación</p>
+      <p class="tag">IA &bull; Software &bull; Sistemas Embebidos &bull; Innovación</p>
       <h1>Hola, soy <span>Mario García</span></h1>
       <p class="description">
         Desarrollador de IA Jr. en Querétaro Digital, tecnólogo por la UNAM Juriquilla
         y ganador del Hackathon Querétaro Digital.
       </p>
-
       <div class="hero-buttons">
-        <a href="#proyectos" class="btn primary">Ver proyectos</a>
-        <a href="mailto:marioygh15@gmail.com" class="btn secondary">Contactarme</a>
+        <a href="#proyectos" class="btn primary" id="hero-ver-proyectos">Ver proyectos</a>
+        <a href="assets/cv/CV_Mario_Garcia.pdf" download class="btn secondary" id="hero-descargar-cv">Descargar CV</a>
       </div>
     </section>
   </header>
 
   <main>
 
-    <section id="sobre-mi" class="section">
+    <!-- ===== SOBRE MÍ ===== -->
+    <section id="sobre-mi" class="section reveal">
       <h2>Sobre mí</h2>
-      <p>
-        Soy egresado de Tecnología por la UNAM, campus Juriquilla. Actualmente trabajo como
-        Desarrollador de IA Jr. en el proyecto Querétaro Digital, impulsado por el Gobierno
-        del Estado de Querétaro. También colaboro desde hace más de cuatro años en el CFATA-UNAM,
-        desarrollando proyectos relacionados con sistemas embebidos, procesamiento de señales,
-        automatización e inteligencia artificial aplicada.
-      </p>
+      <div class="about-grid">
+        <p class="about-text">
+          Soy egresado de Tecnología por la UNAM, campus Juriquilla. Actualmente trabajo como
+          Desarrollador de IA Jr. en el proyecto Querétaro Digital, impulsado por el Gobierno
+          del Estado de Querétaro. También colaboro desde hace más de cuatro años en el CFATA-UNAM,
+          desarrollando proyectos relacionados con sistemas embebidos, procesamiento de señales,
+          automatización e inteligencia artificial aplicada.
+        </p>
+        <ul class="about-highlights">
+          <li><span class="hl-icon">🏆</span> Ganador del Hackathon Querétaro Digital 2024</li>
+          <li><span class="hl-icon">🎓</span> Egresado de Tecnología — UNAM Juriquilla</li>
+          <li><span class="hl-icon">🤖</span> Desarrollador de IA Jr. en Querétaro Digital</li>
+          <li><span class="hl-icon">🔬</span> +4 años de investigación en CFATA-UNAM</li>
+          <li><span class="hl-icon">💡</span> Proyectos en IoT, IA aplicada y señales biomédicas</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="proyectos" class="section">
+    <!-- ===== EXPERIENCIA ===== -->
+    <section id="experiencia" class="section reveal">
+      <h2>Experiencia</h2>
+      <div class="timeline">
+
+        <!-- ── Agrega o edita entradas de experiencia aquí ── -->
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 – presente</span>
+            <h3>Desarrollador de IA Jr.</h3>
+            <p class="timeline-org">Querétaro Digital · Gobierno del Estado de Querétaro</p>
+            <p>Desarrollo de chatbots conversacionales con RAG, clasificadores de seguridad con embeddings y pipelines de NLP para trámites gubernamentales en producción.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2022 – presente</span>
+            <h3>Desarrollador de Investigación</h3>
+            <p class="timeline-org">CFATA-UNAM · Juriquilla, Querétaro</p>
+            <p>Diseño e implementación de sistemas embebidos, dispositivos IoT, procesamiento de señales biomédicas (ECG) e inteligencia artificial aplicada a salud.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot timeline-dot--highlight"></div>
+          <div class="timeline-content timeline-content--highlight">
+            <span class="timeline-date">2024</span>
+            <h3>🏆 Ganador — Hackathon Querétaro Digital</h3>
+            <p class="timeline-org">Querétaro, México</p>
+            <p>Primer lugar en hackathon gubernamental con solución tecnológica de impacto social.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2020 – 2024</span>
+            <h3>Licenciatura en Tecnología</h3>
+            <p class="timeline-org">UNAM, Campus Juriquilla</p>
+            <p>Formación en electrónica, programación, sistemas embebidos, señales y comunicaciones.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section id="proyectos" class="section reveal">
       <h2>Proyectos destacados</h2>
+      <p class="section-subtitle">Algunos de los proyectos en los que he trabajado. Cada tarjeta puede incluir un enlace a su repositorio.</p>
 
       <div class="cards">
-        <article class="card">
+
+        <!--
+          ════════════════════════════════════════════════════
+          CÓMO EDITAR UN PROYECTO:
+          - icon:         Emoji representativo del proyecto
+          - badge:        Texto del badge superior (ej. "Destacado", "En producción", "Tesis")
+          - badge-class:  "badge--featured" (morado), "badge--live" (verde), "badge--thesis" (azul)
+          - h3:           Nombre del proyecto
+          - p:            Descripción del proyecto (puede ser tan larga como necesites)
+          - tags:         Lista de tecnologías separadas por ·
+          - href del btn: URL del repositorio en GitHub (o "#" si es privado)
+          - btn text:     "Ver en GitHub" o "Repositorio privado"
+          ════════════════════════════════════════════════════
+        -->
+
+        <!-- PROYECTO 1 -->
+        <article class="card" id="proyecto-ecg">
+          <div class="card-header">
+            <span class="card-icon">🫀</span>
+            <span class="badge badge--thesis">Tesis</span>
+          </div>
           <h3>Monitoreo cardíaco portátil</h3>
           <p>
-            Sistema basado en ESP32, AD8232 y NB-IoT para adquirir, procesar y transmitir
-            señales ECG hacia un servidor remoto.
+            Sistema completo de monitoreo ECG con hardware propio (ESP32-S3, AD8232, SIM7020E),
+            firmware en C, comunicación NB-IoT, backend en Python/Django con Raspberry Pi
+            y dashboard web en tiempo real. Proyecto de tesis de titulación.
           </p>
-          <span>ESP32 · ECG · NB-IoT · Python</span>
+          <div class="card-tags">
+            <span>ESP32-S3</span><span>C</span><span>NB-IoT</span><span>Python</span><span>Django</span><span>ECG</span>
+          </div>
+          <!-- Cambia el href por la URL de tu repo, o pon "#" si es privado -->
+          <a href="#" class="card-btn" target="_blank" rel="noopener">Ver en GitHub →</a>
         </article>
 
-        <article class="card">
+        <!-- PROYECTO 2 -->
+        <article class="card" id="proyecto-chatbot">
+          <div class="card-header">
+            <span class="card-icon">🤖</span>
+            <span class="badge badge--live">En producción</span>
+          </div>
           <h3>Chatbot AppQro con RAG</h3>
           <p>
-            Asistente conversacional para trámites gubernamentales con recuperación de información,
-            clasificación semántica y generación contextual.
+            Asistente conversacional para trámites gubernamentales del estado de Querétaro.
+            Usa FAISS para búsqueda semántica, clasificación de intención y generación
+            de respuesta contextual con LLMs. Actualmente en uso en la plataforma AppQro.
           </p>
-          <span>Python · FAISS · RAG · LLM</span>
+          <div class="card-tags">
+            <span>Python</span><span>FAISS</span><span>RAG</span><span>LLM</span><span>NLP</span>
+          </div>
+          <!-- Cambia el href por la URL de tu repo, o pon "#" si es privado -->
+          <a href="#" class="card-btn card-btn--disabled" target="_blank" rel="noopener">Repositorio privado</a>
         </article>
 
-        <article class="card">
+        <!-- PROYECTO 3 -->
+        <article class="card" id="proyecto-crm">
+          <div class="card-header">
+            <span class="card-icon">📊</span>
+            <span class="badge badge--featured">Destacado</span>
+          </div>
           <h3>CRM para agencia de seguros</h3>
           <p>
-            Sistema de escritorio para gestión de clientes, pólizas, tareas y recordatorios,
-            integrado con Google Sheets.
+            Aplicación de escritorio para gestión de clientes, pólizas, seguimiento
+            de tareas y recordatorios automáticos. Integración con Google Sheets
+            y Google Calendar para sincronización de datos en tiempo real.
           </p>
-          <span>Python · CustomTkinter · Google API</span>
+          <div class="card-tags">
+            <span>Python</span><span>CustomTkinter</span><span>Google API</span><span>SQLite</span>
+          </div>
+          <!-- Cambia el href por la URL de tu repo -->
+          <a href="#" class="card-btn" target="_blank" rel="noopener">Ver en GitHub →</a>
         </article>
 
-        <article class="card">
+        <!-- PROYECTO 4 -->
+        <article class="card" id="proyecto-seguridad">
+          <div class="card-header">
+            <span class="card-icon">🛡️</span>
+            <span class="badge badge--live">En producción</span>
+          </div>
           <h3>Clasificador de ciberseguridad</h3>
           <p>
-            Clasificador binario basado en embeddings para validar preguntas antes de enviarlas
-            a un modelo de lenguaje.
+            Clasificador binario basado en embeddings para detectar y filtrar queries
+            potencialmente maliciosas o fuera de dominio antes de enviarlas a un LLM.
+            Componente clave del sistema RAG de Querétaro Digital.
           </p>
-          <span>Embeddings · IA · NLP · Gradio</span>
+          <div class="card-tags">
+            <span>Embeddings</span><span>IA</span><span>NLP</span><span>Python</span><span>Gradio</span>
+          </div>
+          <!-- Cambia el href por la URL de tu repo, o pon "#" si es privado -->
+          <a href="#" class="card-btn card-btn--disabled" target="_blank" rel="noopener">Repositorio privado</a>
         </article>
+
+        <!--
+          ════════════════════════════════════════════════════
+          AGREGA MÁS PROYECTOS AQUÍ copiando el bloque de
+          <article class="card"> ... </article> de arriba
+          ════════════════════════════════════════════════════
+        -->
+
       </div>
     </section>
 
-    <section id="tecnologias" class="section">
+    <!-- ===== TECNOLOGÍAS ===== -->
+    <section id="tecnologias" class="section reveal">
       <h2>Tecnologías y herramientas</h2>
 
-      <div class="tech-grid">
-        <span>C</span>
-        <span>C++</span>
-        <span>Python</span>
-        <span>MATLAB</span>
-        <span>VHDL</span>
-        <span>Assembler</span>
-        <span>Django</span>
-        <span>React</span>
-        <span>ESP32</span>
-        <span>Linux</span>
-        <span>Git</span>
-        <span>Google Cloud</span>
+      <div class="tech-categories">
+
+        <div class="tech-category">
+          <h4>Lenguajes</h4>
+          <div class="tech-grid">
+            <span>Python</span>
+            <span>C</span>
+            <span>C++</span>
+            <span>MATLAB</span>
+            <span>VHDL</span>
+            <span>Assembler</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h4>Web &amp; Backend</h4>
+          <div class="tech-grid">
+            <span>Django</span>
+            <span>React</span>
+            <span>FastAPI</span>
+            <span>HTML / CSS</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h4>IA &amp; Datos</h4>
+          <div class="tech-grid">
+            <span>FAISS</span>
+            <span>Embeddings</span>
+            <span>LLMs</span>
+            <span>scikit-learn</span>
+            <span>NumPy</span>
+            <span>Pandas</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h4>Embebidos &amp; Hardware</h4>
+          <div class="tech-grid">
+            <span>ESP32</span>
+            <span>Raspberry Pi</span>
+            <span>AD8232</span>
+            <span>NB-IoT</span>
+            <span>MQTT</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h4>Herramientas</h4>
+          <div class="tech-grid">
+            <span>Git</span>
+            <span>Linux</span>
+            <span>Google Cloud</span>
+            <span>Google APIs</span>
+            <span>Docker</span>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <section id="contacto" class="section contact">
-      <h2>Contacto</h2>
-      <p>
-        ¿Tienes una idea, proyecto o colaboración en mente?
-      </p>
-
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="section contact reveal">
+      <h2>¿Hablamos?</h2>
+      <p>¿Tienes una idea, proyecto o colaboración en mente? Con gusto platicamos.</p>
       <div class="contact-links">
-        <a href="mailto:marioygh15@gmail.com">Correo</a>
-        <a href="https://github.com/MarioYGH" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/mario-yahir-garcía-hernández-381a45361" target="_blank">LinkedIn</a>
+        <a href="mailto:marioygh15@gmail.com" class="contact-btn" id="contacto-email">
+          <span>✉️</span> Correo
+        </a>
+        <a href="https://github.com/MarioYGH" target="_blank" rel="noopener" class="contact-btn" id="contacto-github">
+          <span>🐙</span> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/mario-yahir-garcía-hernández-381a45361" target="_blank" rel="noopener" class="contact-btn" id="contacto-linkedin">
+          <span>💼</span> LinkedIn
+        </a>
+        <a href="assets/cv/CV_Mario_Garcia.pdf" download class="contact-btn contact-btn--cv" id="contacto-cv">
+          <span>📄</span> Descargar CV
+        </a>
       </div>
     </section>
 
   </main>
 
   <footer>
-    <p>© 2026 Mario García. Desarrollado con HTML, CSS y GitHub Pages.</p>
+    <p>© 2026 Mario García · Hecho con HTML, CSS y GitHub Pages</p>
   </footer>
 
   <script src="script.js"></script>
